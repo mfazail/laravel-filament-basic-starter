@@ -17,15 +17,27 @@ This is a basic starter template for tall stack project with filament as admin p
 cp .env.example .env
 ```
 
+#### Create sqlite database file (Or connect to your choice of database)
+```bash
+touch database/database.sqlite
+```
+
 #### Install php packages
 
 ```bash
 composer install
 ```
+
 #### Install nodejs packages
 
 ```bash
 pnpm i
+```
+
+#### Generate app key
+
+```bash
+php artisan key:generate
 ```
 
 #### Migrate database
